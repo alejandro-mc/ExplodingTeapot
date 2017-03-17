@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dispteapot.vert</file>
+        <file>teapotpassthrough.frag</file>
+    </qresource>
+</RCC>
