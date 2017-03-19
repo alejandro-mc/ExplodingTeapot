@@ -26,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     mesh.cpp \
-    worldviewport.cpp
+    worldviewport.cpp \
+    explosiveentity.cpp
 
 HEADERS  += mainwindow.h \
     mesh.h \
     vertex.h \
-    worldviewport.h
+    worldviewport.h \
+    explosiveentity.h
 
 DISTFILES +=
 

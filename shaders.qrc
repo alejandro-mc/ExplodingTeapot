@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>dispteapot.vert</file>
         <file>teapotpassthrough.frag</file>
+        <file>passthrough.frag</file>
+        <file>simulation.vert</file>
     </qresource>
 </RCC>

@@ -4,6 +4,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QAction>
 #include "mesh.h"
+#include "explosiveentity.h"
 
 #include "worldviewport.h"
 
@@ -17,6 +18,7 @@ public:
 
 private slots:
     void loadMesh();
+    void runSimulation();
 
 
 private:

@@ -2,12 +2,13 @@
 #define VERTEX_H
 #include <vector>
 
-/*struct vec3D{
+struct vec3D{
     float x;
     float y;
-    float x;
+    float z;
 };
 
+/*
 struct vec2D{
     float x;
     float y;

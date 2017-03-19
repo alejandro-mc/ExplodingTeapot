@@ -1,6 +1,6 @@
 #include <QMenuBar>
 #include <QFileDialog>
-
+#include <QTime>
 
 #include "mainwindow.h"
 #include "mesh.h"
@@ -46,8 +46,19 @@ void MainWindow::loadMesh(){
     m_teapot = new Mesh();
     m_teapot->loadDataFromFile(fileName);
 
+    //create exploding teapot entity
+    ExplosiveEntity ex_teapot = ExplosiveEntity(m_teapot);
+    qDebug() << "Generating explosion data...";
+    ex_teapot.genExplosionData();
+    qDebug() << "Done.";
+
     m_worldviewport = new WorldViewport();
     m_worldviewport->addVertexData(m_teapot->vertexData(),m_teapot->vertexCount());
+    m_worldviewport->addSimData(ex_teapot.getCOMs(),ex_teapot.getVelocities(),ex_teapot.getangVelocities());
 
     this->setCentralWidget(m_worldviewport);
+}
+
+void MainWindow::runSimulation(){
+
 }

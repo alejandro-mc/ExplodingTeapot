@@ -14,13 +14,15 @@ public:
     void* vertexData();
     int vertexCount();
 
+    vector<Vertex>   m_vertices;//TEMP made public
+
 private:
     void addVertexFromFile(QByteArray,QByteArray,QByteArray);
     void addNormalFromFile(QByteArray,QByteArray,QByteArray);
     void addFaceFromFile(QByteArray,QByteArray,QByteArray);
     void addTextCoordFromFile(QByteArray,QByteArray);
 
-    vector<Vertex>   m_vertices;
+
     vector<TexCoord> m_texcoords;
     vector<Normal>   m_normals;
     vector<Face>     m_faces;
