@@ -8,11 +8,11 @@ struct vec3D{
     float z;
 };
 
-/*
+
 struct vec2D{
     float x;
     float y;
-};*/
+};
 
 
 struct Face{

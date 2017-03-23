@@ -98,3 +98,10 @@ void* Mesh::vertexData(){
 int Mesh::vertexCount(){
     return m_vertices.size();
 }
+
+int   Mesh::faceCount(){
+    return m_faces.size();
+}
+void* Mesh::faceData(){
+    return m_faces.data();
+}

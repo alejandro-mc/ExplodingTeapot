@@ -12,7 +12,9 @@ public:
     Mesh();
     void loadDataFromFile(QString);
     void* vertexData();
-    int vertexCount();
+    int   vertexCount();
+    int   faceCount();
+    void* faceData();
 
     vector<Vertex>   m_vertices;//TEMP made public
 
